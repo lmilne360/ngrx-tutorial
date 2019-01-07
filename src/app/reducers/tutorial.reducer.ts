@@ -1,5 +1,6 @@
 import * as TutorialActions from './../actions/tutorial.actions';
-import { Tutorial } from 'src/models/tutorial.model';
+import { Tutorial } from '../models/tutorial.model';
+
 
 
 const initialState: Tutorial = {
