@@ -13,6 +13,9 @@ export function reducer(state: Tutorial[]  = [initialState], action: TutorialAct
     case TutorialActions.ADD_TUTORIAL: {
       return [...state, action.payload];
     }
+    case TutorialActions.REMOVE_TUTORIAL:
+      // state.filter((tutorial, index) => index !== action.payload);
+      return [...state.filter((tutorial, index) => index !== action.payload)];
     default: {
       return state;
     }

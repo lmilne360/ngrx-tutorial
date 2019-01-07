@@ -3,6 +3,7 @@ import { Observable } from 'rxjs';
 import { Tutorial } from '../models/tutorial.model';
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.state';
+import * as TutorialActions from './../actions/tutorial.actions';
 
 @Component({
   selector: 'app-read',
@@ -20,4 +21,9 @@ export class ReadComponent implements OnInit {
   ngOnInit() {
   }
 
+  removeTutorial(i: number) {
+
+    console.log(`tutorial # ${i + 1} was selected to be removed`);
+    this.store.dispatch(new TutorialActions.RemoveTutorial(i));
+  }
 }
