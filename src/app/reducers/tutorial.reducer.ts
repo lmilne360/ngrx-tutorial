@@ -5,7 +5,7 @@ import { Tutorial } from '../models/tutorial.model';
 
 const initialState: Tutorial = {
     name: 'Initial Tutorial',
-    url: 'google.com'
+    url: 'https://www.google.com'
 };
 
 export function reducer(state: Tutorial[]  = [initialState], action: TutorialActions.Actions ) {

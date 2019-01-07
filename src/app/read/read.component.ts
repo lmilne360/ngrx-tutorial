@@ -10,7 +10,7 @@ import { AppState } from '../app.state';
   styleUrls: ['./read.component.scss']
 })
 export class ReadComponent implements OnInit {
-
+/*  This component shows how to read from ngrx store */
   tutorials: Observable<Tutorial[]>;
 
   constructor(private store: Store<AppState>) {
